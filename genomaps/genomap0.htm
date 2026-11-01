@@ -1,0 +1,50 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" href="../style.css" type="text/css"/>
+</head>
+
+<body onload='javascript:initPopupToggle("togglePopUp");' onresize="javascript:window.setAll();">
+<span class="floatright">
+	<img src="../images/zoompanreset.gif" onclick="window.zoomPanReset();" alt="Regresar a la imangen SVG original" title="Regresar a la imangen SVG original">
+	<img src="../images/zoomin.gif" onclick="window.zoomIn();" alt="Acercar la imagen SVG" title="Acercar la imagen SVG">
+	<img src="../images/zoomout.gif" onclick="window.zoomOut();" alt="Alejar la imagen SVG" title="Alejar la imagen SVG">
+	<img src="../images/zoomextent.gif" onclick="window.zoomExtent(-16028,-1104,18930,706);" alt="Ver la imagen SVG completa" title="Ver la imagen SVG completa">
+	<a href="../svghelp.htm" target="_blank">
+		<img src="../images/info.gif" border="0" alt="Mostrar la ayuda usando Adobe SVG Viewer" title="Mostrar la ayuda usando Adobe SVG Viewer">
+	</a>
+	<img src="../images/maximize.gif" name="togglePopUp" onclick="javascript:togglePopUpFrame(this.name);" alt="Haz clic para aumentar/reducir la imagen SVG" title="Haz clic para aumentar/reducir la imagen SVG">
+	<img src="../images/close.gif" onclick="hideSvgFrame(event);" alt="Oculta este marco SVG" title="Oculta este marco SVG">
+</span>
+<h3 style="margin:2;"><img src="../images/svg.gif"> Diagrama Genealógico : Manolo y Amalia</h3>
+
+<span class="clear">
+<script language="JavaScript" src="../svgcheck.js"></script>
+<script language="VBScript" src="../svgcheck.vbs"></script>
+<script language="JavaScript" src="../script.js"></script>
+<script language="JavaScript"><!--
+checkAndGetSVGViewer();
+var agt=navigator.userAgent.toLowerCase();
+is_ie=(agt.indexOf("msie")!=-1);
+var strFileSvg='genomap0.svg';
+if (is_ie || document.location.href.indexOf('file://')==-1) strFileSvg = '../genomapsz/' + strFileSvg + 'z';
+
+var param = getArgs();
+var MapX=param.x;
+var MapY=param.y;
+var MapHighlight=(param.highlight=='true');
+var MapBounds = new Array(-16028,-1104,18930,706);
+var MapZoomExtent = false;
+emitSVG('src=' + strFileSvg + ' name="SVGEmbed" height="88%" width="100%" type="image/svg+xml" border="2"');
+showPopUpFrame('',true);
+
+// --></script>
+<noscript>
+<embed src="genomap0.svg" name="SVGEmbed" height="88%" width="100%" type="image/svg+xml" border="2"" pluginspage='http://www.adobe.com/svg/viewer/install/' />
+</noscript>
+</span>
+</body>
+</html>
+
